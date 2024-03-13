@@ -31,12 +31,13 @@
             <h3>See your To Do</h3>
             <ul>
               <li v-for="toDo in toDoList" id="my_toDo">
+                <!-- <s v-if="toDo.completed">{{ toDo.title }}</s> -->
                 <div class="toDo_name">
                   <!-- if user is editing the name, span is input text -->
                   <span v-if="editedToDoId === toDo.id">
                     <input type="text" v-model="editedToDoTitle" @keyup.enter="editDone">
                   </span>
-                  <span v-else>
+                  <span v-else :class="{complete: toDo.completed}">
                     {{toDo.title}}
                   </span>
                 </div>
@@ -48,6 +49,9 @@
                   <!--  -->
                   <button @click="editToDo(toDo.id, toDo.title)">
                     <i class="fa-solid fa-pencil"></i>
+                  </button>
+                  <button @click="markComplete(toDo.id)">
+                    <i class="fa-solid fa-check"></i> 
                   </button>
                 </div>
               </li>

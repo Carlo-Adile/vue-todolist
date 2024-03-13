@@ -42,3 +42,9 @@ body{
 .toDo_buttons{
   
 }
+
+.complete{
+  text-decoration: line-through;
+  /* color:red;
+  font-size:2rem; */
+}

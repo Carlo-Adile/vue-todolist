@@ -1,6 +1,6 @@
 const app = Vue.createApp({
-  data(){
-    return{
+  data() {
+    return {
       toDoList: [
         {
           id: 1,
@@ -8,6 +8,7 @@ const app = Vue.createApp({
           complete: false,
         }
       ],
+      /* reset */
       /* save new to do title */
       newToDoTitle: '',
       /* modify to do */
@@ -16,25 +17,25 @@ const app = Vue.createApp({
     };
   },
   methods: {
-    generateToDo(){
+    generateToDo() {
       this.toDoList.push({
         id: this.toDoList.length + 1,
         title: this.newToDoTitle,
-        completed: false,
+        completed: false
       });
       /* reset */
       this.newToDoTitle = '';
     },
-    removeToDo(id){
+    removeToDo(id) {
       /* pass a new array without the to do with this id */
       this.toDoList = this.toDoList.filter(todo => todo.id !== id);
     },
-    editToDo(id, title){
+    editToDo(id, title) {
       /* change template to input text */
       this.editedToDoId = id;
       this.editedToDoTitle = title;
     },
-    editDone(){
+    editDone() {
       /* iterate to find id to edit */
       this.toDoList.forEach(todo => {
         if (todo.id === this.editedToDoId) {
@@ -44,6 +45,14 @@ const app = Vue.createApp({
       /* reset */
       this.editedToDoId = null;
       this.editedToDoTitle = '';
+    },
+    markComplete(id) {
+      // find id
+      const toDo = this.toDoList.find(todo => todo.id === id);
+
+      if(toDo){
+        toDo.completed = !toDo.completed;
+      }
     }
   }
 });
