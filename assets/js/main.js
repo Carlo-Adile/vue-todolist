@@ -7,7 +7,18 @@ const app = Vue.createApp({
           title: 'view your To Do here',
           complete: false,
         }
-      ]
+      ],
+      newToDoTitle: ''
+    };
+  },
+  methods: {
+    generateToDo(){
+      this.toDoList.push({
+        id: this.toDoList.length + 1,
+        title: this.newToDoTitle,
+        completed: false,
+      });
+      this.newToDoTitle = '';
     }
   }
 });

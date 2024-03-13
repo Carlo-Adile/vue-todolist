@@ -16,7 +16,7 @@
         <div class="col-12">
           <div class="card">
             <h3>Add a To Do here</h3>
-            
+            <input type="text" @keyup.enter="generateToDo()" placeholder="add a new To Do" v-model="newToDoTitle"></input>
           </div>
         </div>
         <!-- to do list here -->
