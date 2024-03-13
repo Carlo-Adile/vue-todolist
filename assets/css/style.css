@@ -1,0 +1,31 @@
+*{
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  background: #dfe4e4;
+}
+
+.container{
+  width:80%;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: white;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-12{
+  width:100%;
+}
+
+.card{
+  margin: 1rem;
+  border-radius: 5px;
+  
+}
