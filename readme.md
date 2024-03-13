@@ -13,3 +13,23 @@ COMPONENTI DEL PROBLEMA:
     - tasto toggle per il completamento
     - tasto per la rimozione
   - sezione: aggiungi un To Do alla lista
+
+
+RACCOLTA DATI:
+Visualizzando alcune to do list online risulta che gli elementi indispensabili siano:
+- interfaccia utente
+- funzionalità di aggiunta
+- funzionalità di eliminazione
+- funzionalità comunicativa
+- persistenza dati
+- filtraggio e ordinamento
+- gestione errori
+- design responsivo
+
+ANALISI DATI:
+Il primo grado di avanzamento del programma dovrebbe riguardare la creazione del programma e la divisione in sezione lista dei to do e sezione aggiungi un todo.
+Successivamente bisogna creare funzioni per l'aggiunta, modifica ed eliminazione dei todo.
+Il secondo grado di avanzamento dovrebbe riguardare l'aggiunta di effetti comunicativi di informazioni, un design che offra una buona UX.
+I successivi gradi di avanzamento dovrebbe riguardare la persistenza dei dati, la funzione di filtraggio ecc... tuttavia questi esulano dalla consegna dell'esercizio.
+
+
