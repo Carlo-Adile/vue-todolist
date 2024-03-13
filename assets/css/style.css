@@ -29,3 +29,16 @@ body{
   border-radius: 5px;
   
 }
+
+#my_toDo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.toDo_name{
+}
+
+.toDo_buttons{
+  
+}

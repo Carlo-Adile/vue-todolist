@@ -19,6 +19,9 @@ const app = Vue.createApp({
         completed: false,
       });
       this.newToDoTitle = '';
+    },
+    removeToDo(id){
+      this.toDoList = this.toDoList.filter(todo => todo.id !== id);
     }
   }
 });
