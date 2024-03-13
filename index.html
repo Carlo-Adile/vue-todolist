@@ -16,7 +16,7 @@
     <div class="container">
       <div class="row">
         <!--  -->
-        <h1>To Do List</h1>
+        <h1 id="title">To Do List</h1>
         <!-- add a to do here -->
         <div class="col-12">
           <div class="card">
@@ -29,7 +29,7 @@
         <div class="col-12">
           <div class="card">
             <h3>See your To Do</h3>
-            <ul>
+            <ul id="my_ul">
               <li v-for="toDo in toDoList" id="my_toDo">
                 <!-- <s v-if="toDo.completed">{{ toDo.title }}</s> -->
                 <div class="toDo_name">

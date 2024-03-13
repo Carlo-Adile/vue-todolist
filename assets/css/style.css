@@ -18,6 +18,7 @@ body{
 .row{
   display: flex;
   flex-wrap: wrap;
+  gap:1rem;
 }
 
 .col-12{
@@ -30,9 +31,18 @@ body{
   
 }
 
+#title{
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+#my_ul{
+  width:100%;
+  padding: 0;
+}
 #my_toDo{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
 }
 
@@ -40,7 +50,12 @@ body{
 }
 
 .toDo_buttons{
-  
+  display: flex;
+  gap: 3px;
+
+  button{
+    padding:0.5rem;
+  }
 }
 
 .complete{
